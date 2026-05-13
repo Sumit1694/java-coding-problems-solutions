@@ -53,5 +53,4 @@ public class MaximumSubArraySum {
 		System.out.println(maxSumSubArray(arr));
         System.out.println(KadanesAlgorithm(arr));
 	}
-
 }
