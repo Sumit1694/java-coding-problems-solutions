@@ -24,7 +24,5 @@ public class Permutations {
 
 		String str = "ABC";
 		allPermutations(str, "");
-
 	}
-
 }
