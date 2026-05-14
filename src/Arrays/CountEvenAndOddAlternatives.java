@@ -24,10 +24,31 @@ public class CountEvenAndOddAlternatives {
 		return maxCount;
 	}
 
+	static int OptimizedApproach(int [] arr)
+	{
+		int count = 1;
+		int maxCount = 1;
+
+		for(int i=1;i<arr.length;i++)
+		{
+			if((arr[i]%2==0 && arr[i-1]%2!=0) || arr[i]%2!=0 && arr[i-1]%2==0)
+			{
+				count++;
+				maxCount = Math.max(count, maxCount);
+			}
+			else
+			{
+				count = 1;
+			}
+		}
+		return maxCount;
+	}
+
 	public static void main(String[] args) {
 
 		int [] arr = {8,10,13,14,9,5};
 		System.out.println(countEvenAndOddAlternatives(arr));
+		System.out.println(OptimizedApproach(arr));
 
 	}
 
