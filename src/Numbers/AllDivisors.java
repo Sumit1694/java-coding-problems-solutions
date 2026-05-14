@@ -22,8 +22,5 @@ public class AllDivisors {
 		int n = sc.nextInt();
 		allDivisors(n);
 		sc.close();
-
-
 	}
-
 }
