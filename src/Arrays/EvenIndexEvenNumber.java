@@ -33,7 +33,5 @@ public class EvenIndexEvenNumber {
 		int [] arr2 = {3,2,6,5,8,7};
 		System.out.println(Arrays.toString(rearrange(arr1)));
 		System.out.println(Arrays.toString(rearrange(arr2)));
-
 	}
-
 }
