@@ -37,7 +37,5 @@ public class RotateAnArrayNaive {
 		rotate(arr, -3);
 
 		System.out.println(Arrays.toString(arr));
-
 	}
-
 }
