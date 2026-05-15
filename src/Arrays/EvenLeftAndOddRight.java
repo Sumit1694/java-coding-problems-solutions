@@ -49,7 +49,7 @@ public class EvenLeftAndOddRight {
 
 		int [] arr = {1,4,3,8,7,2};
 		int [] arr2 = {2, 4, 1, 6};
-		//moveEvenAndOdd(arr);
+		moveEvenAndOdd(arr);
 		moveEvenOrOdd(arr2);
 		System.out.println(Arrays.toString(arr2));
 	}
