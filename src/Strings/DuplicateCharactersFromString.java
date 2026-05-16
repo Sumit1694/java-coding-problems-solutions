@@ -32,7 +32,5 @@ public class DuplicateCharactersFromString {
 				}
 			}
 		}
-
 	}
-
 }
