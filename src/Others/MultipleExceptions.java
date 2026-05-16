@@ -26,15 +26,30 @@ class InvalidPINException extends Exception
 
 public class MultipleExceptions {
 
-	public static void main(String[] args) throws InvalidAgeException, Others.InvalidPINException, Others.InsufficientBalanceException {
+	public static void main(String[] args)  {
 
-		int age = 16;
+		int age = 19;
 		int balance = 5100;
 		int pin = 1234;
 
-		AgeValidator(age);
-		InsufficientBalanceException(balance);
-		InvalidPINException(pin);
+		try {
+			AgeValidator(age);
+		} catch (InvalidAgeException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			InsufficientBalanceException(balance);
+		} catch (Others.InsufficientBalanceException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			InvalidPINException(pin);
+		} catch (Others.InvalidPINException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		System.out.println("Login successful!");
 	}
 
@@ -56,7 +71,7 @@ public class MultipleExceptions {
 
 	static void InvalidPINException(int PIN) throws InvalidPINException
 	{
-		if(!(PIN>999) || !(PIN<=9999))
+		if(PIN<1000 || PIN>9999)
 		{
             throw new InvalidPINException("InvalidPINException: PIN is invalid");
 		}
