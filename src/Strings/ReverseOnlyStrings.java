@@ -32,7 +32,5 @@ public class ReverseOnlyStrings {
 		}
 
 		System.out.println(rev);
-
 	}
-
 }
