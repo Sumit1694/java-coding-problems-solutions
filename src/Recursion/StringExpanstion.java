@@ -26,7 +26,5 @@ public class StringExpanstion {
 
 		String str = "a2b3c4";
 		expand(str, 0);
-
 	}
-
 }
