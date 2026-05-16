@@ -5,7 +5,7 @@ public class MissingNumber {
 	static int missingNumber(int [] arr)
 	{
 		int n = arr.length+1;
-		int expSum = n *(n+1)/2;
+		int expSum = n*(n+1)/2;
 		int actSum = 0;
 
 		for(int i=0;i<arr.length;i++)
