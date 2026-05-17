@@ -31,10 +31,7 @@ public class EquilibriumIndex {
 
 	public static void main(String[] args) {
 
-		int [] arr = {-7, 1, 5, 2, -4, 3, 0};
+		int [] arr = {1, 3, 5, 2, 2};
 		System.out.println(eIndex(arr));
-
-
 	}
-
 }
