@@ -17,8 +17,6 @@ public class ReverseStringWhilePreservingSpaces {
 
 		for(int j=0;j<str.length();j++)
 		{
-			char ch = str.charAt(j);
-
 			if(str.charAt(j)==' ')
 			{
 				result += " ";
