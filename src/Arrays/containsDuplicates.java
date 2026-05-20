@@ -58,7 +58,5 @@ public class containsDuplicates {
 		System.out.println(containsDuplicate(arr));
 		System.out.println(containsDuplicate1(arr));
 		System.out.println(containsDuplicate2(arr));
-
 	}
-
 }
