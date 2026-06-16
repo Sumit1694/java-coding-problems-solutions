@@ -31,6 +31,5 @@ public class SortElementsByFrequency {
 
 		int [] arr = {1,1,1,2,2,3};
 		SortByFreq(arr);
-
 	}
 }
