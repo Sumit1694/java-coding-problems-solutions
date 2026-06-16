@@ -29,7 +29,7 @@ class SortBySalary implements Comparator<Employee2>
 	@Override
 	public int compare(Employee2 e1, Employee2 e2)
 	{
-		return e1.sal - e2.sal;
+		return Integer.compare(e1.sal, e2.sal);
 	}
 }
 
