@@ -91,6 +91,7 @@ public class MergeAndRemoveDuplicates {
         int[] arr2={3,4,5,6};
 
         mergeAndRemoveDuplicates(arr1,arr2);
+        System.out.println();
         System.out.println(Arrays.toString(mergeUnique(arr1,arr2)));
 	}
 

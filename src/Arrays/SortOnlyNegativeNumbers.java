@@ -31,7 +31,7 @@ public class SortOnlyNegativeNumbers {
 		{
 			for(int j=0;j<neg.length-i-1;j++)
 			{
-				if(neg[j]>neg[j+1])
+				if(neg[j]<neg[j+1])
 				{
 					int temp = neg[j];
 					neg[j] = neg[j+1];

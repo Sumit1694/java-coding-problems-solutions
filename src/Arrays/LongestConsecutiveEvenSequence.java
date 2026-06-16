@@ -12,12 +12,12 @@ public class LongestConsecutiveEvenSequence {
 			if(arr[i]%2==0)
 			{
 				count++;
-				maxCount = Math.max(count, maxCount);
 			}
 			else
 			{
 				count = 0;
 			}
+			maxCount = Math.max(count, maxCount);
 		}
 		return maxCount;
 	}

@@ -43,7 +43,5 @@ public class SubArraySumWithSlidingWindow {
 		int k = 3;
 		System.out.println(maxSum(arr, k));
 		System.out.println(maxSum1(arr ,k));
-
 	}
-
 }
