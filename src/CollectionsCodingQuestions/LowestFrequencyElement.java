@@ -3,9 +3,9 @@ package CollectionsCodingQuestions;
 import java.util.HashMap;
 import java.util.Map;
 
-public class HighestFrequencyElement {
+public class LowestFrequencyElement {
 
-	static int highestFr(int [] arr)
+	static int lowestFr(int [] arr)
 	{
 		Map<Integer,Integer> map = new HashMap<>();
 
@@ -14,12 +14,12 @@ public class HighestFrequencyElement {
 			map.put(n, map.getOrDefault(n, 0)+1);
 		}
 
-		int freq = 0;
+		int freq = Integer.MAX_VALUE;
 		int ele = 0;
 
 		for(Map.Entry<Integer, Integer>entry:map.entrySet())
 		{
-			if(entry.getValue()>freq)
+			if(entry.getValue()<freq)
 			{
 				freq = entry.getValue();
 				ele = entry.getKey();
@@ -32,6 +32,6 @@ public class HighestFrequencyElement {
 	public static void main(String[] args) {
 
 		int [] arr = {1,2,2,3,3,3};
-	    System.out.println(highestFr(arr));
+        System.out.println(lowestFr(arr));
 	}
 }
