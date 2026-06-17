@@ -14,6 +14,5 @@ public class List1ButNotList2 {
 		list1.removeAll(list2);
 
 		System.out.println(list1);
-
 	}
 }
